@@ -1,0 +1,81 @@
+[
+    {
+        "name": "TATA STEEL",
+        "perCom" : "50",
+        "totalsales" :"200",
+        "targetsales" : "400",
+        "status":"off Track",
+        "children" : [
+            {
+                "name": "Factory A",
+                "perCom" : "20",
+                "totalsales" :"20",
+                "targetsales" : "100",
+                "status":"At risk",
+                "children" : [
+
+                    {
+                        "name": "Godown A",
+                        "perCom" : "20",
+                        "totalsales" :"10",
+                        "targetsales" : "50",
+                        "status":"At risk"
+                    },
+                    {
+                        "name": "Godown B",
+                        "perCom" : "20",
+                        "totalsales" :"10",
+                        "targetsales" : "50",
+                        "status":"At risk"
+                    }                   
+                ]
+            },
+            {
+                "name": "Factory B",
+                "perCom" : "75",
+                "totalsales" :"150",
+                "targetsales" : "200",
+                "status":"on Track",
+                "children" : [
+                    {
+                        "name": "Godown A",
+                        "perCom" : "20",
+                        "totalsales" :"10",
+                        "targetsales" : "50",
+                        "status":"off Track"
+                    },
+                    {
+                        "name": "Godown B",
+                        "perCom" : "20",
+                        "totalsales" :"10",
+                        "targetsales" : "50",
+                        "status":"on Track"
+                    }  
+                ]
+            },
+            {
+                "name": "Factory C",
+                "perCom" : "30",
+                "totalsales" :"30",
+                "targetsales" : "100",
+                "status":"off Track",
+                "children" : [
+                    {
+                        "name": "Godown A",
+                        "perCom" : "30",
+                        "totalsales" :"10",
+                        "targetsales" : "50",
+                        "status":"At risk"
+                    },
+                    {
+                        "name": "Godown B",
+                        "perCom" : "40",
+                        "totalsales" :"10",
+                        "targetsales" : "50",
+                        "status":"off track"
+                    }  
+                ]
+            }
+        ]
+    }
+]
