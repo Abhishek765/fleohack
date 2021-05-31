@@ -9,13 +9,21 @@
   justify-content: center;
   padding: 10px 10px;
 }
+.listContainer {
+  list-style-type: none;
+}
 
+.CardDiv {
+  margin: 2rem;
+}
 .mainCard {
   cursor: pointer;
   box-shadow: 0 4px 8px 0 grey;
   text-align: center;
   border: none;
   border-radius: 10px;
+  max-width: 17rem;
+  min-width: 17rem;
 }
 .cardHeader {
   display: flex;
@@ -54,5 +62,4 @@
 .completestate {
   width: 60%;
   height: 10px;
-  background: rgba(255, 166, 0, 0.289);
 }

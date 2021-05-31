@@ -5,7 +5,7 @@ import faker from "faker";
 const Card = ({ data }) => {
 
     return (
-        <ul className="d-flex d-tree-container flex-column">
+        <ul className="listContainer d-flex d-tree-container flex-row">
             {data.map((item) => (
                 <TreeNode node={item} />
             ))}
@@ -37,7 +37,7 @@ const TreeNode = ({ node }) => {
 
     return (
         <li className="d-tree-node border-0">
-            <div className="d-flex" onClick={e => setchildVisible(v => !v)}>
+            <div className="d-flex CardDiv" onClick={e => setchildVisible(v => !v)}>
                 {hasChild && (
                     <div className={`d-inline d-tree-toggler ${childVisible ?
                         "active" : ""}`}>
@@ -57,7 +57,7 @@ const TreeNode = ({ node }) => {
                         </div>
                         <p className="col-md-6 statusTrack" style={{ color: `${txcolor}`, background: `${bgColor}` }} >{node.status}</p>
                     </div>
-                    <div className="row completestate"></div>
+                    <div className="row completestate" style={{ background: `${bgColor}` }}></div>
                 </div>
 
 
