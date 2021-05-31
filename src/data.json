@@ -42,7 +42,23 @@
                         "perCom" : "20",
                         "totalsales" :"10",
                         "targetsales" : "50",
-                        "status":"off Track"
+                        "status":"off Track",
+                        "children" : [
+                            {
+                                "name": "SubGodown A",
+                                "perCom" : "20",
+                                "totalsales" :"10",
+                                "targetsales" : "50",
+                                "status":"At risk"
+                            },
+                            {
+                                "name": "SubGodown B",
+                                "perCom" : "20",
+                                "totalsales" :"10",
+                                "targetsales" : "50",
+                                "status":"on Track"
+                            }  
+                        ]
                     },
                     {
                         "name": "Godown B",
